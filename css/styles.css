@@ -158,11 +158,25 @@ img {
 
 /* hero */
 .hero {
+  max-width: 1600px;
+  min-height: 600px;
+  margin-left: auto;
+  margin-right: auto;
   padding-top: 200px;
   padding-bottom: 200px;
 
+  background-image: linear-gradient(
+      to right,
+      rgba(47, 48, 58, 0.8),
+      rgba(47, 48, 58, 0.8)
+    ),
+    url(../images/web-studio-background.jpg);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-color: rgba(47, 48, 58, 0.8);
+
   text-align: center;
-  background-color: #757575;
 }
 .hero-title {
   margin-bottom: 30px;
@@ -187,6 +201,33 @@ img {
 
 .benefits-item:not(:last-child) {
   margin-right: 30px;
+}
+
+.benefits-item::before {
+  content: "";
+  display: block;
+  height: 120px;
+  margin-bottom: 30px;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-color: #f5f4fa;
+  border-radius: 4px;
+}
+
+.antenna::before {
+  background-image: url(../images/antenna.svg);
+}
+
+.clock::before {
+  background-image: url(../images/clock.svg);
+}
+
+.vector::before {
+  background-image: url(../images/vector.svg);
+}
+
+.astronaut::before {
+  background-image: url(../images/astronaut.svg);
 }
 
 .benefits-name {
