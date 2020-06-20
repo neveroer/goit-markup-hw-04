@@ -18,7 +18,9 @@
     <header class="line">
       <div class="container header-flex">
         <nav class="header-flex">
-          <p class="logo"><span class="logo-web">Web</span> Studio</p>
+          <a class="logo" href="./index.html"
+            ><span class="logo-web">Web</span> Studio</a
+          >
           <ul class="nav-list list">
             <li class="nav-item">
               <a class="nav-link link" href="./index.html">Студия</a>
@@ -35,13 +37,19 @@
         <address>
           <ul class="address-list list">
             <li class="address-item">
-              <a class="address-link link" href="mailto:info@devstudio.com"
-                >info@devstudio.com</a
+              <a class="address-link link mail" href="mailto:info@devstudio.com"
+                ><svg class="icon-mail" width="16" height="12">
+                  <use href="./images/sprite.svg#icon-mail"></use>
+                </svg>
+                info@devstudio.com</a
               >
             </li>
             <li class="address-item">
-              <a class="address-link link" href="tel:+380961111111"
-                >+38 096 111 11 11</a
+              <a class="address-link link phone" href="tel:+380961111111"
+                ><svg class="icon-phone" width="10" height="15">
+                  <use href="./images/sprite.svg#icon-phone"></use>
+                </svg>
+                +38 096 111 11 11</a
               >
             </li>
           </ul>
@@ -70,7 +78,7 @@
         </ul>
         <ul class="projects-list list">
           <li class="project-card">
-            <a class="link" href="#">
+            <a class="project-link link" href="#">
               <img
                 src="./images/technokr.jpg"
                 alt="Ноутбук"
@@ -89,7 +97,7 @@
             </a>
           </li>
           <li class="project-card">
-            <a class="link" href="#">
+            <a class="project-link link" href="#">
               <img
                 src="./images/golden-star.jpg"
                 alt="Двое баскетболистов"
@@ -108,7 +116,7 @@
             </a>
           </li>
           <li class="project-card">
-            <a class="link" href="#">
+            <a class="project-link link" href="#">
               <img
                 src="./images/seafood.jpg"
                 alt="Логотип ресторана Сифуд"
@@ -127,7 +135,7 @@
             </a>
           </li>
           <li class="project-card">
-            <a class="link" href="#"
+            <a class="project-link link" href="#"
               ><img
                 src="./images/prime.jpg"
                 alt="Безпроводные наушники"
@@ -146,7 +154,7 @@
             </a>
           </li>
           <li class="project-card">
-            <a class="link" href="#"
+            <a class="project-link link" href="#"
               ><img
                 src="./images/boxes.jpg"
                 alt="Белая и коричневая коробка"
@@ -165,7 +173,7 @@
             </a>
           </li>
           <li class="project-card">
-            <a class="link" href="#"
+            <a class="project-link link" href="#"
               ><img
                 src="./images/no-borders.jpg"
                 alt="Экран компьютера"
@@ -184,7 +192,7 @@
             </a>
           </li>
           <li class="project-card">
-            <a class="link" href="#"
+            <a class="project-link link" href="#"
               ><img
                 src="./images/limited-edition.jpg"
                 alt="Открытый журнал"
@@ -203,7 +211,7 @@
             </a>
           </li>
           <li class="project-card">
-            <a class="link" href="#"
+            <a class="project-link link" href="#"
               ><img
                 src="./images/lab.jpg"
                 alt="Бирка с надписью Лейблтег"
@@ -222,7 +230,7 @@
             </a>
           </li>
           <li class="project-card">
-            <a class="link" href="#"
+            <a class="project-link link" href="#"
               ><img
                 src="./images/business.jpg"
                 alt="Человек печатает на ноутбуке"
@@ -247,59 +255,59 @@
       <div class="container container-footer">
         <div class="footer-flex">
           <div class="footer-address">
-            <a class="logo footer-logo" href="#"
-              ><span class="logo-web">Web</span
-              ><span class="logo-studio">Studio</span></a
-            >
+            <a class="logo footer-logo" href="#"><span class="logo-web">Web</span><span
+                class="logo-studio">Studio</span></a>
             <address class="footer-address">
-              <a
-                class="address-map footer-address-links"
-                href="https://goo.gl/maps/tR7T5dvsBJvdwT1U7"
-                >г. Киев, пр-т Леси Украинки, 26</a
-              >
+              <a class="address-map footer-address-links" href="https://goo.gl/maps/tR7T5dvsBJvdwT1U7">г. Киев, пр-т Леси
+                Украинки, 26</a>
               <br />
-              <a
-                class="mail-phone footer-address-links"
-                href="mailto:info@example.com"
-                >info@example.com</a
-              >
+              <a class="mail-phone footer-address-links" href="mailto:info@example.com">info@example.com</a>
               <br />
-              <a
-                class="mail-phone footer-address-links"
-                href="tel:+380991111111"
-                >+38 099 111 11 11</a
-              >
+              <a class="mail-phone footer-address-links" href="tel:+380991111111">+38 099 111 11 11</a>
             </address>
           </div>
           <!-- социальные сети -->
           <div>
             <b class="footer-call">Присоединяйтесь</b>
-            <ul class="links-list list">
-              <li class="links-item">
-                <a href="#" aria-label="Ссылка на инстаграм"></a>
+            <ul class="links-list footer-social list">
+              <li class="links-item footer-social">
+                <a class="social-link footer-social-link" href="#" aria-label="Ссылка на инстаграм"><svg width="20"
+                    height="20">
+                    <use href="./images/sprite.svg#icon-instagram"></use>
+                  </svg></a>
               </li>
               <li class="links-item">
-                <a href="#" aria-label="Ссылка на твиттер"></a>
+                <a class="social-link footer-social-link" href="#" aria-label="Ссылка на твиттер"><svg width="20"
+                    height="20">
+                    <use href="./images/sprite.svg#icon-twitter"></use>
+                  </svg></a>
               </li>
               <li class="links-item">
-                <a href="#" aria-label="Сслыка на фейсбук"></a>
+                <a class="social-link footer-social-link" href="#" aria-label="Сслыка на фейсбук"><svg width="20"
+                    height="20">
+                    <use href="./images/sprite.svg#icon-facebook"></use>
+                  </svg></a>
               </li>
               <li class="links-item">
-                <a href="#" aria-label="Ссылка на линкедин"></a>
+                <a class="social-link footer-social-link" href="#" aria-label="Ссылка на линкедин"><svg width="20"
+                    height="20">
+                    <use href="./images/sprite.svg#icon-linkedin"></use>
+                  </svg></a>
               </li>
             </ul>
           </div>
           <!-- Форма подписки на рассылку -->
           <div class="subscribe-form">
             <b class="footer-call">Подпишитесь на рассылку</b>
-            <input class="email" type="email" />
-            <a class="button" href="#"
-              ><span class="subscribe">Подписаться</span></a
-            >
+            <div class="subscribe-flex">
+              <input class="email" type="email" />
+              <a class="button button-footer" href="#"><span class="subscribe">Подписаться</span> <svg class="subscribe-svg"
+                  width="24" height="24">
+                  <use href="./images/sprite.svg#icon-send"></use>
+                </svg></a>
+            </div>
           </div>
-        </div>
-        <p class="copyright" lang="en">2020 | Developed by GoIT Students</p>
-      </div>
     </footer>
-  </body>
-</html>
+    </body>
+    
+    </html>
