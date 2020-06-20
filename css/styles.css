@@ -134,7 +134,10 @@ img {
   margin-right: 50px;
 }
 
-.nav-link {
+.nav-link,
+.address-link {
+  display: flex;
+  align-items: center;
   padding-top: 32px;
   padding-bottom: 32px;
   color: var(--secondary-text-color);
@@ -153,7 +156,6 @@ img {
 .address-list {
   display: flex;
   margin-left: auto;
-  align-items: baseline;
 }
 
 .icon-mail,
