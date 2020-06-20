@@ -9,6 +9,8 @@
   --primary-background-color: #ffffff;
   --secondary-background-color: #f5f4fa;
   --footer-background-color: #2f303a;
+  --icons-color: #afb1b8;
+  --icons-bg: rgba(255, 255, 255, 0.1);
   --main-font: "Roboto", sans-serif;
   --accent-font: "Raleway", sans-serif;
 }
@@ -66,6 +68,14 @@ img {
   line-height: 1.14;
   letter-spacing: 0.02em;
   display: block;
+}
+.visually-hidden {
+  clip: rect(1px, 1px, 1px, 1px);
+  height: 1px;
+  overflow: hidden;
+  position: absolute;
+  white-space: nowrap;
+  width: 1px;
 }
 .button {
   text-decoration: none;
@@ -143,14 +153,24 @@ img {
 .address-list {
   display: flex;
   margin-left: auto;
+  align-items: baseline;
 }
+
+.icon-mail,
+.icon-phone {
+  display: inline-block;
+  margin-right: 10px;
+}
+
 .address-item:not(:last-child) {
   margin-right: 30px;
 }
+
 .address-link {
   color: var(--primary-text-color);
   font-style: normal;
 }
+
 .address-link:hover,
 .address-link:focus {
   color: var(--accent-color);
@@ -198,36 +218,21 @@ img {
 .benefits-list {
   display: flex;
 }
-
+.benefits-item {
+  width: calc((100% - 90px) / 4);
+}
 .benefits-item:not(:last-child) {
   margin-right: 30px;
 }
 
-.benefits-item::before {
-  content: "";
-  display: block;
-  height: 120px;
+.icon {
+  text-align: center;
   margin-bottom: 30px;
-  background-repeat: no-repeat;
-  background-position: center;
+  height: 120px;
+  padding-top: 25px;
+
   background-color: #f5f4fa;
   border-radius: 4px;
-}
-
-.antenna::before {
-  background-image: url(../images/antenna.svg);
-}
-
-.clock::before {
-  background-image: url(../images/clock.svg);
-}
-
-.vector::before {
-  background-image: url(../images/vector.svg);
-}
-
-.astronaut::before {
-  background-image: url(../images/astronaut.svg);
 }
 
 .benefits-name {
@@ -322,7 +327,71 @@ img {
   text-align: center;
 }
 
-/* clients, на который не навесишь стили, пока нету свгшек */
+.links-list {
+  display: flex;
+  text-align: center;
+  padding-left: 32px;
+  padding-right: 32px;
+}
+
+.links-item {
+  display: block;
+}
+
+.links-item:not(:last-child) {
+  margin-right: 10px;
+}
+
+.social-link {
+  display: flex;
+  justify-content: center;
+  width: 44px;
+  height: 44px;
+  border-radius: 50%;
+}
+
+.social-link:hover {
+  background-color: var(--accent-color);
+}
+
+.social-icon {
+  align-self: center;
+  fill: var(--icons-color);
+}
+
+.social-icon:hover,
+.social-icon:focus {
+  fill: var(--third-text-color);
+}
+
+/* clients*/
+.clients-list {
+  display: flex;
+  justify-content: center;
+}
+
+.clients-item:not(:last-child) {
+  margin-right: 30px;
+}
+
+.company-item {
+  display: flex;
+  justify-content: center;
+  width: 170px;
+  height: 90px;
+  border: 1px solid var(--icons-color);
+  border-radius: 4px;
+}
+
+.company-item:hover,
+.company-item:focus {
+  border-color: var(--accent-color);
+}
+
+.company-icon {
+  align-self: center;
+}
+
 /* footer */
 footer {
   background-color: var(--footer-background-color);
@@ -394,6 +463,19 @@ footer {
   font-weight: 700;
   text-transform: uppercase;
   color: var(--third-text-color);
+}
+
+.footer-social {
+  padding-left: 0;
+  padding-right: 0;
+}
+
+.footer-social-link {
+  background-color: var(--icons-bg);
+}
+
+.footer-svg {
+  fill: var(--third-text-color);
 }
 
 .email {
