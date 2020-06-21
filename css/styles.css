@@ -287,7 +287,13 @@ img {
 .team {
   background-color: var(--secondary-background-color);
 }
+.team-background {
+  padding-top: 30px;
+  padding-bottom: 24px;
 
+  border-radius: 0px 0px 4px 4px;
+  background-color: var(--primary-background-color);
+}
 .team-list {
   display: flex;
 }
@@ -302,12 +308,6 @@ img {
 
 .team-item:not(:last-child) {
   margin-right: 30px;
-  padding-bottom: 24px;
-}
-
-.team-photo {
-  display: block;
-  margin-bottom: 30px;
 }
 
 .team-person {
