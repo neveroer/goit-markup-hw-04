@@ -612,21 +612,11 @@ footer {
   color: var(--secondary-text-color);
 }
 
-.project-name:hover,
-.project-name:focus {
-  color: var(--accent-color);
-}
-
 .project-description {
   font-weight: 400;
   font-size: 16px;
   line-height: 1.88;
   color: var(--primary-text-color);
-}
-
-.project-description:hover,
-.project-description:focus {
-  color: var(--accent-color);
 }
 
 .project-decription {
