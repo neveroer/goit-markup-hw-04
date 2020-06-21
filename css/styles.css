@@ -384,11 +384,13 @@ img {
   height: 90px;
   border: 1px solid var(--icons-color);
   border-radius: 4px;
+  fill: var(--icons-color);
 }
 
 .company-item:hover,
 .company-item:focus {
   border-color: var(--accent-color);
+  fill: var(--accent-color);
 }
 
 /* .company-icon {
@@ -402,7 +404,7 @@ footer {
 
 .container-footer {
   padding-top: 45px;
-  padding-bottom: 0;
+  padding-bottom: 60px;
 }
 
 .footer-flex {
