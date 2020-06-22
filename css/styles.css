@@ -140,18 +140,16 @@ img {
   align-items: center;
   padding-top: 32px;
   padding-bottom: 32px;
-  color: var(--primary-text-color);
-  fill: var(--primary-text-color);
+  color: var(--secondary-text-color);
 }
 
 .nav-link:visited {
-  color: var(--primary-text-color);
+  color: var(--secondary-text-color);
 }
 
 .nav-link:hover,
 .nav-link:focus {
   color: var(--accent-color);
-  fill: var(--accent-color);
 }
 
 /* адрес хедера */
@@ -172,12 +170,14 @@ img {
 
 .address-link {
   color: var(--primary-text-color);
+  fill: var(--primary-text-color);
   font-style: normal;
 }
 
 .address-link:hover,
 .address-link:focus {
   color: var(--accent-color);
+  fill: var(--accent-color);
 }
 
 /* hero */
