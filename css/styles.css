@@ -140,16 +140,18 @@ img {
   align-items: center;
   padding-top: 32px;
   padding-bottom: 32px;
-  color: var(--secondary-text-color);
+  color: var(--primary-text-color);
+  fill: var(--primary-text-color);
 }
 
 .nav-link:visited {
-  color: var(--secondary-text-color);
+  color: var(--primary-text-color);
 }
 
 .nav-link:hover,
 .nav-link:focus {
   color: var(--accent-color);
+  fill: var(--accent-color);
 }
 
 /* адрес хедера */
